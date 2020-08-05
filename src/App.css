@@ -1,0 +1,82 @@
+.App {
+  background-color: #F6F6F6;
+  padding-bottom: 1rem;
+}
+
+.header {
+  height: 13rem;
+  position: absolute;
+  background: rgb(0, 209, 193);
+  top: 0;
+}
+
+.welcome-msg {
+  margin-left: 1rem;
+  position: relative;
+  top: 1rem;
+}
+.active-accounts-text {
+  margin-left: 1rem;
+  position: relative;
+  top: 2rem;
+}
+
+.footer {
+  display: flex;
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+   background-color: white;
+   justify-content: space-around;
+   border-top: 2px solid #E0E0E0;
+}
+.footer > div {
+  height: 4rem;
+  /* width: 4rem; */
+  padding-top: 1rem;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+.footer > div:hover {
+  border-top: 1px solid #00D1C1;
+}
+.footer > div > div:hover {
+  background-color: #00D1C1;
+}
+
+.floating-cards-container {
+  padding: 1rem;
+  display: flex;
+  flex: 1;
+  display: flex;
+  overflow: auto;
+  transform: translate(0, -125px);
+}
+
+.floating-cards-container::-webkit-scrollbar {
+  display: none;
+}
+
+.sections-container {
+  transform: translate(0, -135px);
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+}
+
+
+@media (min-width:1281px) {
+  .App {
+    max-width: 500px;
+    margin: auto;
+  }
+  .footer {
+    max-width: 500px;
+    margin: auto;
+    left: auto;
+  }
+}

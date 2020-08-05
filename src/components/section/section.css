@@ -1,0 +1,42 @@
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+
+.horizontal::-webkit-scrollbar {
+    display: none;
+}
+
+
+.section-container {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: white;
+}
+
+.section-header {
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.section-body {
+    padding: 1rem;
+}
+
+.section-body-vertical {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.section-body-vertical .items-container {
+    border-bottom: 1px solid #E0E0E0
+}
+
+.section-body-vertical .items-container:last-child {
+    border-bottom: none
+}
